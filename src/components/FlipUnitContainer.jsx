@@ -21,7 +21,9 @@ const FlipUnitContainer = ({ digit, shuffle, unit }) => {
   const animation2 = !shuffle ? "fold" : "unfold";
 
   return (
-    <div className={"flipUnitContainer"}>
+    <div className={"flipper"}>
+          <div className="gear"></div>
+          <div className="gear"></div>
       <StaticCard position={"upperCard"} digit={currentDigit} />
       <StaticCard position={"lowerCard"} digit={previousDigit} />
       <AnimatedCard digit={digit1} animation={animation1} />

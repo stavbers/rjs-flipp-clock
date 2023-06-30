@@ -40,12 +40,13 @@ function FlipClock() {
      }
    })
     return (
-      <div className={"flipClock"}>
+      <div className="clock">
         <FlipUnitContainer
           unit={"hour"}
           digit={hour}
           shuffle={hourShuffle}
-        />
+        >
+        </FlipUnitContainer>
         <FlipUnitContainer
           unit={"minute"}
           digit={minute}
@@ -56,6 +57,7 @@ function FlipClock() {
           digit={second}
           shuffle={secondShuffle}
         />
+      
       </div>
     );
   }
